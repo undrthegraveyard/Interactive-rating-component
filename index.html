@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Rating Component</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- The main pop-up screen -->
+  <article class="rating-state">
+    <div class="icon-container">
+      <img src="images/icon-star.svg" alt="star icon">
+    </div>
+    <div>
+      <h1>How did we do?</h1>
+      <p>Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
+    </div>
+    <div class="rating-container">
+      <div class="rating-option" data-rating="1"><p>1</p></div>
+      <div class="rating-option" data-rating="2"><p>2</p></div>
+      <div class="rating-option" data-rating="3"><p>3</p></div>
+      <div class="rating-option" data-rating="4"><p>4</p></div>
+      <div class="rating-option" data-rating="5"><p>5</p></div>
+    </div>
+    <div>
+      <button type="button" aria-label="Submit">SUBMIT</button>
+    </div>
+  </article>
+  <!-- The splash screen after the user gives the rating -->
+  <article class="thank-you-state">
+    <div>
+      <img src="images/illustration-thank-you.svg" alt="thank you illustration">
+    </div>
+    <div class="user-rating">
+      <p>You selected <span id="selected-rating">4</span> out of 5</p>
+    </div>
+    <div>
+      <h1>Thank You!</h1>
+      <p>We appreciate you taking the time to give a rating. If you ever need more support, don't hesitate to get in touch!</p>
+    </div>
+  </article>
+  <script src="main.js"></script>
+</body>
+</html>
