@@ -66,12 +66,13 @@ article{
   padding: 2rem;
   border-radius: 1rem;
 
-  width: 30%;
+  max-width: 23rem;
   height: auto;
 
   background: var(--background-gradient);
 
   gap:1rem;
+  margin: auto 1rem;
 }
 .icon-container{
   display: flex;
@@ -162,6 +163,9 @@ button:hover, button:focus{
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  min-width: 23rem;
+  height: auto;
 }
 .thank-you-state img{
   width: 150px;
