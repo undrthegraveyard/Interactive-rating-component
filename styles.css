@@ -126,9 +126,10 @@ article p{
 
   background-color: hsla(217, 12%, 63%,0.5);
 }
-.rating-option:focus, .rating-option:hover{
+ .rating-option:hover{
   background-color: var(--clr-primary-orange);
 }
+
 .rating-option p{
   color: var(--clr-secondary-light-grey);
   font-family: var(--font-family);
@@ -157,7 +158,7 @@ button:hover, button:focus{
  background-color: var(--clr-secondary-white);
 }
 .thank-you-state{
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -188,3 +189,12 @@ button:hover, button:focus{
 .user-rating p{
   color: var(--clr-primary-orange);
 }
+.selected {
+  background-color: var(--clr-secondary-white);
+  color: var(--clr-secondary-very-dark-blue);
+}
+.selected:hover, .selected:focus {
+  background-color: var(--clr-secondary-white);
+  color: var(--clr-secondary-very-dark-blue);
+} 
+
