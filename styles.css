@@ -40,14 +40,14 @@ p, h1, h2, h3, h4, h5, h6 {
 
   --p-font-weight: 400;
   --p-font-size: 15px;
-  --p-color:var(--clr-secondary-light-grey);
+  --p-color: var(--clr-secondary-light-grey);
 
   --background-gradient: linear-gradient(180deg, var(--clr-secondary-dark-blue), var(--clr-secondary-dark-blue));
 
 }
 
 /* Customised CSS */
-body{
+body {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -56,9 +56,10 @@ body{
   height: 100vh;
   width: 100%;
 
-  gap:1rem;
+  gap: 1rem;
 }
-article{
+
+article {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -71,38 +72,43 @@ article{
 
   background: var(--background-gradient);
 
-  gap:1rem;
+  gap: 1rem;
   margin: auto 1rem;
 }
-.icon-container{
+
+.icon-container {
   display: flex;
   justify-content: center;
   align-items: center;
 
-  background-color: hsla(217, 12%, 63%,0.5);
+  background-color: hsla(217, 12%, 63%, 0.5);
   
   width: 50px;
   height: 50px;
 
   border-radius: 50%;
 }
-img{
+
+img {
   width: 20px;
   height: auto;
 }
-article h1{
+
+article h1 {
   font-family: var(--font-family);
   font-size: var(--h1-font-size);
   font-weight: var(--h1-font-weight);
   color: var(--h1-color);
 }
-article p{
+
+article p {
   font-family: var(--font-family);
   font-size: var(--p-font-size);
   font-weight: var(--p-font-weight);
   color: var(--p-color);
 }
-.rating-container{
+
+.rating-container {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -115,7 +121,8 @@ article p{
 
   margin: 1rem auto;
 }
-.rating-option{
+
+.rating-option {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -125,21 +132,26 @@ article p{
 
   border-radius: 50%;
 
-  background-color: hsla(217, 12%, 63%,0.5);
-}
- .rating-option:hover{
-  background-color: var(--clr-primary-orange);
+  background-color: hsla(217, 12%, 63%, 0.5);
+  cursor: pointer;
 }
 
-.rating-option p{
+.rating-option:hover, .rating-option:focus {
+  background-color: var(--clr-primary-orange);
+  outline: none; /* Remove focus outline */
+}
+
+.rating-option p {
   color: var(--clr-secondary-light-grey);
   font-family: var(--font-family);
   font-weight: var(--h1-font-weight);
 }
+
 .rating-option:focus p, .rating-option:hover p {
   color: var(--clr-secondary-very-dark-blue);
 }
-button{
+
+button {
   width: 100%;
   height: 40px;
 
@@ -155,10 +167,13 @@ button{
 
   cursor: pointer;
 }
-button:hover, button:focus{
- background-color: var(--clr-secondary-white);
+
+button:hover, button:focus {
+  background-color: var(--clr-secondary-white);
+  outline: none; /* Remove focus outline */
 }
-.thank-you-state{
+
+.thank-you-state {
   display: none;
   flex-direction: column;
   justify-content: center;
@@ -167,38 +182,44 @@ button:hover, button:focus{
   min-width: 23rem;
   height: auto;
 }
-.thank-you-state img{
+
+.thank-you-state img {
   width: 150px;
   height: auto;
 }
-.thank-you-state h1{
+
+.thank-you-state h1 {
   margin-bottom: 0.5rem;
   text-align: center;
 }
-.thank-you-state p{
+
+.thank-you-state p {
   text-align: center;
 }
-.user-rating{
+
+.user-rating {
   display: flex;
   justify-content: center;
   align-items: center;
 
-  background-color: hsla(217, 12%, 63%,0.5);
+  background-color: hsla(217, 12%, 63%, 0.5);
 
   padding: 0.25rem 2rem;
   border-radius: 50px;
 
   margin: 1.25rem auto;
 }
-.user-rating p{
+
+.user-rating p {
   color: var(--clr-primary-orange);
 }
+
 .selected {
   background-color: var(--clr-secondary-white);
   color: var(--clr-secondary-very-dark-blue);
 }
+
 .selected:hover, .selected:focus {
   background-color: var(--clr-secondary-white);
   color: var(--clr-secondary-very-dark-blue);
-} 
-
+}

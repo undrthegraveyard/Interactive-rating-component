@@ -13,27 +13,27 @@
   <!-- The main pop-up screen -->
   <article class="rating-state">
     <div class="icon-container">
-      <img src="images/icon-star.svg" alt="star icon">
+      <img src="images/icon-star.svg" alt="Star icon">
     </div>
     <div>
       <h1>How did we do?</h1>
       <p>Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
     </div>
     <div class="rating-container">
-      <div class="rating-option" data-rating="1"><p>1</p></div>
-      <div class="rating-option" data-rating="2"><p>2</p></div>
-      <div class="rating-option" data-rating="3"><p>3</p></div>
-      <div class="rating-option" data-rating="4"><p>4</p></div>
-      <div class="rating-option" data-rating="5"><p>5</p></div>
+      <div class="rating-option" data-rating="1" tabindex="0" role="button" aria-label="Rate 1 out of 5"><p>1</p></div>
+      <div class="rating-option" data-rating="2" tabindex="0" role="button" aria-label="Rate 2 out of 5"><p>2</p></div>
+      <div class="rating-option" data-rating="3" tabindex="0" role="button" aria-label="Rate 3 out of 5"><p>3</p></div>
+      <div class="rating-option" data-rating="4" tabindex="0" role="button" aria-label="Rate 4 out of 5"><p>4</p></div>
+      <div class="rating-option" data-rating="5" tabindex="0" role="button" aria-label="Rate 5 out of 5"><p>5</p></div>
     </div>
     <div>
-      <button type="button" aria-label="Submit">SUBMIT</button>
+      <button type="button" aria-label="Submit rating">SUBMIT</button>
     </div>
   </article>
   <!-- The splash screen after the user gives the rating -->
-  <article class="thank-you-state">
+  <article class="thank-you-state" tabindex="-1">
     <div>
-      <img src="images/illustration-thank-you.svg" alt="thank you illustration">
+      <img src="images/illustration-thank-you.svg" alt="Thank you illustration">
     </div>
     <div class="user-rating">
       <p>You selected <span id="selected-rating"></span> out of 5</p>
